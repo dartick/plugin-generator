@@ -175,7 +175,7 @@ public class ExtGeneratorPlugin extends PluginAdapter {
         } else {
             builder.append(introspectedTable.getFullyQualifiedTable());
         }
-        javaElement.addJavaDocLine("Mapper");
+        builder.append("Mapper");
         javaElement.addJavaDocLine(builder.toString());
         javaElement.addJavaDocLine(" * ");
         javaElement.addJavaDocLine(" * @author " + System.getProperties().getProperty("user.name"));
