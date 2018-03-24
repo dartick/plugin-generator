@@ -11,15 +11,17 @@ the generator plugin of mybatis
 ## install
 1. [Jar下载](https://github.com/dartick/plugin-generator/releases/download/1.0.0/plugin-generator-1.0.0.jar)
 2. 使用maven命令安装到本地仓库(先复制到可编辑的地方，替换掉包位置，再复制到命令行中执行)
-    > Linux:
+   >
+   Linux:
         mvn install:install-file        \
         -Dfile=jar包的位置               \
         -DgroupId=org.xiaoheshan        \
         -DartifactId=plugin-generator   \
         -Dversion=1.0.0                 \
         -Dpackaging=jar
-    
-    > Windows:
+   
+   >
+   Windows:
         mvn install:install-file -Dfile=F:\BaiduYunDownload\plugin-generator-1.0.0.jar -DgroupId=org.xiaoheshan -DartifactId=plugin-generator -Dversion=1.0.0 -Dpackaging=jar
 
 ## usage
