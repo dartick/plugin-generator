@@ -81,7 +81,7 @@ public class ExtGeneratorPlugin extends PluginAdapter {
                 fileNameExt,
                 introspectedTable.getMyBatis3XmlMapperPackage(),
                 context.getSqlMapGeneratorConfiguration().getTargetProject(),
-                false,
+                true,
                 context.getXmlFormatter());
 
         List<GeneratedXmlFile> answer = new ArrayList<GeneratedXmlFile>(1);

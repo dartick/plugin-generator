@@ -25,11 +25,15 @@ the generator plugin of mybatis
                 <version>1.0.0</version>
             </dependency>
         </dependencies>
-                      
-2. 在config.xml中添加注释生成插件
+   
+2. 在config.xml的context中添加设置targetRuntime
+
+       <context id="mysql" targetRuntime="org.xiaoheshan.plugin.generator.UnMergeableMyBatis3Impl">
+                   
+3. 在config.xml中添加注释生成插件
 
        <commentGenerator type="org.xiaoheshan.plugin.generator.CommentGeneratorPlugin"/>
 
-3. 在config.xml中添加Ext生成插件
+4. 在config.xml中添加Ext生成插件
 
        <plugin type="org.xiaoheshan.plugin.generator.ExtGeneratorPlugin"/>
